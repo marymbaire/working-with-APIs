@@ -3,7 +3,7 @@ from . import views
 from django.contrib import admin
 
 app_name = "links"
-urlpatterns= path("api/links/", include("links.urls"))
+path("api/links/", include("links.urls"))
 
 urlpatterns = [
     path("create/", views.PostCreateApi.as_view(), name="api_create"),
